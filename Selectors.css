@@ -1,0 +1,14 @@
+    /* The universal selector changes the properties for everything on the page */
+*{
+    color: olive;
+    background-color: bisque;
+}
+
+button{
+    font-size: 30px;
+}
+
+    /* style two different elements by using the comma */
+h1,h2{
+    color: darkgoldenrod;
+}
