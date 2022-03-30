@@ -1,14 +1,80 @@
     /* The universal selector changes the properties for everything on the page */
 *{
-    color: olive;
-    background-color: bisque;
+    color: #E5E5E5;
+    background-color: #14213D;
+}
+
+nav{
+    display: inline-flex;
+}
+
+    /* The attribute selector allows you to be able to change different elements based of their attributes*/
+nav input[type="password"]{
+    background-color: #00415a;
 }
 
 button{
     font-size: 30px;
+    color: #ffffff;
+    background-color: #EE9B00;
+}
+button:hover{
+    background-color: #CA6702;
+}
+
+    /* The id is a user made selector that can only be used for 1 Element within the HTML to be able to be customize an individually */
+#button{
+    background-color: #CA6702;
 }
 
     /* style two different elements by using the comma */
 h1,h2{
     color: darkgoldenrod;
+    background-color: inherit;
+}
+
+    /* This is a Descendent selector.  In this case all the links within any <p> element will now show up with this color*/
+p a{
+    color: #E9D8A6;
+    background-color: inherit;
+}
+
+    /* The Adjacent(Combinator) Selector will modify only the first <button> under each <h2> element*/
+h2 + button{
+    font-size: 20px;
+    background-color: #AE2012;
+    border-radius: 30px;
+    border: none;
+}
+
+    /* Similar to the 'id' attribute the class selector does the same thing but to every element with the matching class name */
+.post:nth-of-type(2n){
+    background-color: #243864;
+}
+
+span{
+    background-color:inherit;
+    color: #94D2BD;
+}
+.span a{
+    background-color: inherit;
+}
+
+    /* The Direct Descendent Selector modifies only the <a> elements that are directly within the <footer> element.  Any <a> elements that are within another element within the <footer> will not be modified because of this special selector*/
+footer > a{
+    color: #0A9396;
+}
+
+    /* This is the color theme for the page.  Use only these colors */
+#pagecolors{
+    color: #001219;
+    color: #005f72;
+    color: #0A9396;
+    color: #94D2BD;
+    color: #E9D8A6;
+    color: #EE9B00;
+    color: #CA6702;
+    color: #BB3E03;
+    color: #AE2012;
+    color: #9B2226;
 }
